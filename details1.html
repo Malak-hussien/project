@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="event-details">
+    <img src="img/ramy.png" alt="Event Image" class="banner">
+    <div class="info">
+      <h2>Ramy Sabry</h2>
+      <p>No. of shows: 1 <br>
+        El Arena<br>
+        21 November 2025
+      </p>
+      <button class="btn" onclick="togglePrice()">Show Price</button>
+      <p id="price" style="display:none;">🎟️ Ticket Price: 550 EGP</p>
+
+      <button class="btn" onclick="openModal()">Book Now</button>
+    </div>
+  </div>
+  <!-- شروط الحجز -->
+  <div id="termsModal" class="modal">
+    <div class="modal-content">
+      <h3>Terms of entry</h3>
+      <p>Entry is not permitted for anyone under 12 years old.<br>
+        -Re-entry is not permitted once you leave the venue.<br>
+        -Outside food and beverages are not allowed.<br>
+        -No flammable materials allowed
+      </p>
+      <div class="modal-buttons">
+        <button class="btn" onclick="acceptTerms()">Accept</button>
+        <button class="btn cancel" onclick="closeModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

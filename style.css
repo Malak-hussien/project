@@ -1,0 +1,190 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f8f4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* الصفحة الرئيسية */
+.title {
+  margin: 30px 0;
+  color: #2b5e2b;
+}
+
+.events-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 40px;
+  justify-items: center;
+}
+
+.event {
+  background: #fff;
+  border-radius: 15px;
+  width:98%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.event:hover {
+  transform: scale(1.05);
+}
+
+.event img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.event h3 {
+  padding: 10px;
+  color: #2b5e2b;
+}
+
+/* صفحة التفاصيل */
+.banner {
+  width: 80%;
+  height: auto;
+}
+
+.info {
+  padding: 20px;
+}
+
+.btn {
+  background-color: #2b5e2b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #1d3f1d;
+}
+
+.cancel {
+  background-color: #999;
+}
+
+.cancel:hover {
+  background-color: #555;
+}
+
+/* modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 350px;
+}
+
+.modal-buttons {
+  margin-top: 15px;
+}
+
+/* الدفع */
+.payment {
+  background: #fff;
+  width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.payment input {
+  width: 90%;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+/* 🌐 تصميم متجاوب للموبايل */
+@media screen and (max-width: 768px) {
+
+  /* الصفحة الرئيسية */
+  .events-container {
+    display: grid;
+    grid-template-columns: 1fr; /* عمود واحد بدل 3 */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .event {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+  }
+
+  .event img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  /* صفحة التفاصيل */
+  .details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .details-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .details-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .details-info h2 {
+    font-size: 24px;
+  }
+
+  .details-info p {
+    font-size: 16px;
+  }
+
+  /* المودال (الشروط) */
+  .modal-content {
+    width: 90%;
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  /* صفحة الدفع */
+  .payment-form {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .payment-form input {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .payment-form button {
+    width: 100%;
+    font-size: 18px;
+  }
+}

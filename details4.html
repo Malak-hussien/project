@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event 4 - Tech Conference</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="event-details">
+    <img src="img/الصوت والضوء.png" alt="Event Image" class="banner">
+    <div class="info">
+      <h2>Pyramids Sound & Light Show</h2>
+      <p>No. of shows: 6 <br>
+         Sound and Light Venue Pyramids Giza <br>
+        30 November  2025 
+      </p>
+
+      <button class="btn" onclick="togglePrice()">Show Price</button>
+      <p id="price" style="display:none;">🎟️ Ticket Price: 80 EGP <br>
+       🎟️ Children ticket Price: 40 EGP
+      </p>
+
+      <button class="btn" onclick="openModal()">Book Now</button>
+    </div>
+  </div>
+
+  <div id="termsModal" class="modal">
+    <div class="modal-content">
+      <h3>Terms of entry</h3>
+      <p>-Language: English <br>
+        -Full ticket required starting from 12 years old.<br>
+        -Children ticket: from 6 years old to 12 years<br>
+        -Attendance: 15 minutes before show starts<br>
+        -No re-ent<br>
+        -No show policy:
+        If the ticket holder fails to attend the scheduled show without prior notification or rescheduling, no modifications or refunds will be made</p>
+      <div class="modal-buttons">
+        <button class="btn" onclick="acceptTerms()">Accept</button>
+        <button class="btn cancel" onclick="closeModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

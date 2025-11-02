@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event 5 - Charity Run</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="event-details">
+    <img src="img/فرقه عبدالحليم.png" alt="Event Image" class="banner">
+    <div class="info">
+      <h2>Abdel Halim Noweira Ensemble for arab music</h2>
+      <p>No. of shows: 1 <br>
+          Gomhouria Theatre<br>
+          21 November 2025</p>
+
+      <button class="btn" onclick="togglePrice()">Show Price</button>
+      <p id="price" style="display:none;">🎟️ Ticket Price: 185 EGP</p>
+
+      <button class="btn" onclick="openModal()">Book Now</button>
+    </div>
+  </div>
+
+  <div id="termsModal" class="modal">
+    <div class="modal-content">
+      <h3>Terms of entry</h3>
+      <p>1. Doors close at 8:00 PM. <br>
+         2. No food or beverages are allowed inside the auditorium.<br>
+         3. Minimum age for entry is 8 years old.<br>
+        4. Smoking is strictly prohibited.</p>
+      <div class="modal-buttons">
+        <button class="btn" onclick="acceptTerms()">Accept</button>
+        <button class="btn cancel" onclick="closeModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
