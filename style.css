@@ -174,55 +174,6 @@ body {
   background-color: #2f292f;
 }
 /* 🌐 تصميم متجاوب للموبايل */
-@media screen and (max-width: 768px) {
-
-  /* الصفحة الرئيسية */
-  .events-container {
-    display: grid;
-    grid-template-columns: 1fr; /* عمود واحد بدل 3 */
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .event {
-    width: 100%;
-    height: auto;
-    font-size: 18px;
-  }
-
-  .event img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-  }
-
-  /* صفحة التفاصيل */
-  .details-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-  }
-
-  .details-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-
-  .details-info {
-    width: 100%;
-    text-align: center;
-  }
-
-  .details-info h2 {
-    font-size: 24px;
-  }
-
-  .details-info p {
-    font-size: 16px;
-  }
 
   /* المودال (الشروط) */
   .modal-content {
@@ -247,4 +198,45 @@ body {
     font-size: 18px;
   }
 
+}
+/* ✅ إعدادات العرض على الموبايل */
+@media (max-width: 768px) {
+  .event {
+    width: 95%;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    flex-wrap: wrap; /* عشان الصورة والنص ما يخرجوش برة */
+  }
+
+  .event img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  .event-content {
+    width: 100%;
+    text-align: center; 
+    padding: 10px 5px;
+  }
+
+  .event-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .event-content p {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+
+  .event-content .btn {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
 }
