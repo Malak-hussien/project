@@ -199,18 +199,27 @@ body {
   }
 
 }
+/* 🌐 تصميم متجاوب للموبايل */
+@media screen and (max-width: 768px) {
 
-/* ✅ إعدادات العرض على الموبايل */
-@media (max-width: 768px) {
+  /* الصفحة الرئيسية */
+  .events-container {
+    display: grid;
+    grid-template-columns: 1fr; /* عمود واحد بدل 3 */
+    gap: 20px;
+    padding: 20px;
+  }
+
   .event {
-    flex-direction: column; 
-    text-align: center;
+    width: 100%;
+    height: auto;
+    font-size: 18px;
   }
 
   .event img {
     width: 100%;
     height: auto;
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px;
   }
 
   .event-content {
