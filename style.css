@@ -269,3 +269,85 @@ body {
     font-size: 17px;
   }
 }
+/* 🌐 تصميم متجاوب للموبايل */
+@media (max-width: 768px) {
+
+  .title {
+    font-size: 1.8em;
+    margin: 25px 0;
+  }
+
+  .events-container {
+    padding: 10px;
+  }
+
+  .event {
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 18px;
+  }
+
+  .event img {
+    width: 100%;
+    height: 270px; /* تكبير الصورة */
+    border-radius: 18px 18px 0 0;
+    object-fit: cover;
+  }
+
+  .event-content {
+    width: 100%;
+    padding: 20px 15px 25px;
+    text-align: center;
+  }
+
+  .event-content h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+
+  .event-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .btn {
+    width: 90%;
+    font-size: 1em;
+    padding: 12px;
+  }
+
+  /* المودال */
+  .modal-content {
+    width: 90%;
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  /* صفحة الدفع */
+  .payment {
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+  }
+
+  .payment input {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .btn.pay {
+    width: 100%;
+    font-size: 17px;
+  }
+}
