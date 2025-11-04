@@ -202,41 +202,30 @@ body {
 /* ✅ إعدادات العرض على الموبايل */
 @media (max-width: 768px) {
   .event {
-    width: 95%;
-    margin: 15px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+    transform: scale(0.95);
     padding: 10px;
-    flex-wrap: wrap; /* عشان الصورة والنص ما يخرجوش برة */
   }
 
   .event img {
-    width: 100%;
+    width: 45%; 
     height: auto;
-    border-radius: 12px;
-    object-fit: cover;
   }
 
   .event-content {
-    width: 100%;
-    text-align: center; 
-    padding: 10px 5px;
+    width: 50%;
+    text-align: left;
   }
 
   .event-content h3 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+    font-size: 1rem;
   }
 
   .event-content p {
-    font-size: 0.95rem;
-    margin-bottom: 8px;
+    font-size: 0.9rem;
   }
 
   .event-content .btn {
-    font-size: 0.9rem;
-    padding: 8px 15px;
+    font-size: 0.85rem;
+    padding: 6px 12px;
   }
 }
