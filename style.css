@@ -270,7 +270,7 @@ body {
   }
 }
 /* 🌐 تصميم متجاوب للموبايل */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
   .title {
     font-size: 1.8em;
@@ -351,3 +351,4 @@ body {
     font-size: 17px;
   }
 }
+
