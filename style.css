@@ -199,42 +199,35 @@ body {
   }
 
 }
+
 /* ✅ إعدادات العرض على الموبايل */
 @media (max-width: 768px) {
-  .events-container {
-    grid-template-columns: 1fr; 
-    gap: 20px;
-    padding: 15px;
-  }
-
   .event {
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
+    flex-direction: column; 
+    text-align: center;
   }
 
   .event img {
-    width: 45%;
-    border-radius: 12px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
   }
 
   .event-content {
-    width: 50%;
-    text-align: left;
+    padding: 20px;
   }
 
   .event-content h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .event-content p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
-  .event-content .btn {
-    font-size: 0.85rem;
-    padding: 6px 12px;
+  .btn {
+    width: 80%;
+    margin: 8px auto;
   }
 }
+
