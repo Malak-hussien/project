@@ -200,43 +200,72 @@ body {
 
 }
 /* 🌐 تصميم متجاوب للموبايل */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
-  /* الصفحة الرئيسية */
+  .title {
+    font-size: 1.8em;
+    margin: 25px 0;
+  }
+
   .events-container {
-    display: grid;
-    grid-template-columns: 1fr; /* عمود واحد بدل 3 */
-    gap: 20px;
-    padding: 20px;
+    padding: 15px;
   }
 
   .event {
-    width: 100%;
-    height: auto;
-    font-size: 18px;
+    flex-direction: column;
+    text-align: center;
   }
 
   .event img {
     width: 100%;
-    height: auto;
-    border-radius: 15px;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
   }
 
   .event-content {
-    padding: 20px;
+    width: 100%;
+    padding: 15px;
   }
 
   .event-content h3 {
-    font-size: 1.2rem;
+    font-size: 1.3em;
   }
 
   .event-content p {
-    font-size: 0.95rem;
+    font-size: 0.95em;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
   }
 
   .btn {
-    width: 80%;
-    margin: 8px auto;
+    width: 90%;
+    font-size: 1em;
+  }
+
+  /* المودال */
+  .modal-content {
+    width: 90%;
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  /* صفحة الدفع */
+  .payment {
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+  }
+
+  .payment input {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .btn.pay {
+    width: 100%;
+    font-size: 17px;
   }
 }
-
