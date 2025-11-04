@@ -2,6 +2,19 @@
 function goToDetails(page) {
   window.location.href = page;
 }
+// تأثير البلور على باقي الكروت
+const cards = document.querySelectorAll('.event');
+
+cards.forEach(card => {
+  card.addEventListener('mouseenter', () => {
+    cards.forEach(c => {
+      if (c !== card) c.classList.add('blurred');
+    });
+  });
+  card.addEventListener('mouseleave', () => {
+    cards.forEach(c => c.classList.remove('blurred'));
+  });
+});
 
 // إظهار وإخفاء السعر
 function togglePrice() {
@@ -12,7 +25,6 @@ function togglePrice() {
     price.style.display = "none";
   }
 }
-
 // فتح وغلق المودال
 function openModal() {
   document.getElementById("termsModal").style.display = "flex";
