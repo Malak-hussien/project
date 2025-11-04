@@ -201,14 +201,23 @@ body {
 }
 /* ✅ إعدادات العرض على الموبايل */
 @media (max-width: 768px) {
+  .events-container {
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    padding: 15px;
+  }
+
   .event {
-    transform: scale(0.95);
-    padding: 10px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
   }
 
   .event img {
-    width: 45%; 
-    height: auto;
+    width: 45%;
+    border-radius: 12px;
   }
 
   .event-content {
